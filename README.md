@@ -1,5 +1,10 @@
 # Linux on Dell Pro Max 18 Plus (MB18250)
 
+> [!NOTE]
+> **Dell MB18250 is an officially supported Linux laptop (via Dell OEM Ubuntu 24.04 LTS).**<br>This repository is for users who do not want to use OEM Ubuntu.
+>
+> If you do not care what distro you use and just want everything to work out-of-the-box, use an official Dell Ubuntu installation, and everything will "just work".
+
 > [!CAUTION]
 > **USE THIS REPOSITORY AT YOUR OWN RISK!** <br>
 > Any guide, especially code, in thie repository may be subject to a specific environment, or it may even cause unexpected concequences. I am not affiliated with Dell or any vendor of its hardware.<br>
