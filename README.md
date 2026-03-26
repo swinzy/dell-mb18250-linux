@@ -195,7 +195,7 @@ Component,Part Number,Description,Quantity
 | Boot with vanilla kernel                  | :white_check_mark:          |                                                                  |
 | Secure Boot with vanilla kernel           | :white_check_mark:          |                                                                  |
 | Display (max resolution and refresh rate) | :white_check_mark:          |                                                                  |
-| NVIDIA GPU                                | :white_check_mark::warning: | Driver installs, performance untested                            |
+| NVIDIA GPU                                | :white_check_mark:          | Follow Fedora or NVIDIA offical guide for driver. Easy install and automatic akmods sign |
 | Wi-Fi                                     | :white_check_mark:          |                                                                  |
 | WWAN (5G)                                 | :white_check_mark::warning: | Additional steps required. See [/wwan/README.md](wwan/README.md) |
 | Bluetooth                                 | :white_check_mark:          |                                                                  |
