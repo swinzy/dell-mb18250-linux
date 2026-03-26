@@ -1,0 +1,28 @@
+
+module foxconn_local 1.0;
+
+require {
+	type modemmanager_t;
+	type dmidecode_exec_t;
+	type shell_exec_t;
+	type proc_t;
+	type sysfs_t;
+
+	class dir { getattr search };
+	class file { execute execute_no_trans getattr open read };
+}
+
+#============= modemmanager_t ==============
+# Allow dmidecode
+allow modemmanager_t dmidecode_exec_t:file { execute execute_no_trans };
+
+# Allow pgrep
+allow modemmanager_t proc_t:dir { search getattr };
+allow modemmanager_t proc_t:file { read open getattr };
+
+# Allow shell
+allow modemmanager_t shell_exec_t:file { execute execute_no_trans };
+
+# Allow sysfs (mbim path)
+allow modemmanager_t sysfs_t:dir search;
+allow modemmanager_t sysfs_t:file { read open getattr };
